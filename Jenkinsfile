@@ -136,7 +136,7 @@ pipeline { // 파이프라인의 시작
             // 통해서 관리하는 게 좋은 설계라고 생각
             dir ('./server'){
                 sh """
-                docker build . -t server --build-arg env=${PROD}
+                docker build . -t server
                 """
             }
           }
